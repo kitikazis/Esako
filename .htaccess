@@ -1,0 +1,37 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /dashboard/mvc.1/
+
+# Serve existing files/dirs directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything else to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# ── Caché ───────────────────────────────────────────────────
+# Assets estáticos: caché larga (el ?v= del HTML fuerza la actualización
+# cuando el archivo cambia). HTML: nunca cachear, siempre la última versión.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css            "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg          "access plus 1 year"
+  ExpiresByType image/png           "access plus 1 year"
+  ExpiresByType image/webp          "access plus 1 year"
+  ExpiresByType image/avif          "access plus 1 year"
+  ExpiresByType image/svg+xml       "access plus 1 year"
+  ExpiresByType font/woff2          "access plus 1 year"
+  ExpiresByType text/html           "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # No cachear el HTML generado por PHP
+  <FilesMatch "\.(php)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  # Assets con hash de versión: inmutables mientras la URL no cambie
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp|avif|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
