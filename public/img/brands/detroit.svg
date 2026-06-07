@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="73.000839"
+   height="15.36845"
+   viewBox="0 0 19.314805 4.0662357"
+   version="1.1"
+   id="svg21755"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="detroit diesel.svg">
+  <defs
+     id="defs21749">
+    <style
+       id="style21757">
+                                .cls-1 {
+                                    fill: #231f20;
+                                }
+                            </style>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="12.458188"
+     inkscape:cx="36.000419"
+     inkscape:cy="7.1842257"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="744"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata21752">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-255.81418,-306.92983)">
+    <g
+       id="g21777"
+       transform="matrix(0.26458333,0,0,0.26458333,255.94669,307.06214)">
+      <path
+         id="path21763"
+         transform="translate(0,-0.17)"
+         d="m 23.33,4.36 h -5.79 v 6.25 h 5.78 c 1.92,0 2.59,-0.63 2.59,-2.18 V 6.54 C 25.91,5 25.24,4.36 23.32,4.36 M 24,7.88 C 24,8.77 23.68,9 22.86,9 h -3.4 V 5.92 h 3.4 C 23.68,5.92 24,6.15 24,7 Z m 4.82,1.23 h 5 v 1.5 H 26.9 V 4.36 h 6.84 v 1.45 h -4.92 v 1 h 4.66 v 1.3 H 28.82 Z M 56.46,4.29 h -3.07 c -1.73,0 -2.75,0.43 -2.75,2.26 v 1.87 c 0,1.83 1,2.26 2.75,2.26 h 3.07 c 1.73,0 2.75,-0.43 2.75,-2.26 V 6.56 c 0,-1.83 -1,-2.26 -2.75,-2.26 m 0.79,3.53 c 0,0.9 -0.19,1.25 -1.1,1.25 H 53.7 c -0.91,0 -1.1,-0.35 -1.1,-1.25 V 7.15 C 52.6,6.37 52.79,5.9 53.8,5.9 H 56 c 1,0 1.2,0.48 1.2,1.25 z M 70.12,4.36 v 1.56 h -2.69 v 4.69 H 65.51 V 5.92 H 62.82 V 4.36 Z m -22.34,0 H 42 v 6.25 h 1.92 V 9 h 3 c 0.6,0 0.79,0.21 0.79,0.87 v 0.75 h 1.92 V 9.55 c 0,-1 -0.48,-1.28 -1,-1.38 v 0 C 49.51,7.96 49.7,7.47 49.7,6.63 v -0.4 c 0,-1.12 -0.4,-1.86 -1.87,-1.86 m 0,2.42 c 0,0.45 -0.19,0.66 -0.71,0.66 H 43.91 V 5.92 h 3 c 0.6,0 0.88,0.1 0.88,0.65 z M 60.31,4.36 h 1.92 v 6.25 h -1.92 z m -26.1,0 h 7.3 v 1.56 h -2.7 v 4.69 H 36.9 V 5.92 h -2.7 z"
+         class="cls-1"
+         inkscape:connector-curvature="0"
+         style="fill:#231f20" />
+      <polygon
+         id="polygon21765"
+         points="70.72,4.99 70.72,4.29 70.46,4.29 70.46,4.2 71.09,4.2 71.09,4.29 70.83,4.29 70.83,4.99 "
+         class="cls-1"
+         style="fill:#231f20" />
+      <polygon
+         id="polygon21767"
+         points="71.21,4.2 71.35,4.2 71.6,4.87 71.85,4.2 72,4.2 72,4.99 71.9,4.99 71.9,4.33 71.65,4.99 71.56,4.99 71.31,4.33 71.31,4.99 71.21,4.99 "
+         class="cls-1"
+         style="fill:#231f20" />
+      <path
+         id="path21769"
+         transform="translate(0,-0.17)"
+         d="M 12.28,10.71 10.05,8.42 h 1.67 v -1 c 0,0 0.04,-4.72 -4.72,-4.72 a 4.87,4.87 0 0 0 -2.89,1 l 0.7,0.72 a 3.65,3.65 0 0 1 5.88,2.9 h -3 l 4.62,4.74 a 7,7 0 0 0 1.58,-2.87 z"
+         class="cls-1"
+         inkscape:connector-curvature="0"
+         style="fill:#231f20" />
+      <path
+         id="path21771"
+         transform="translate(0,-0.17)"
+         d="M 7,0.32 A 7,7 0 0 0 2.45,2 l 0.8,0.82 A 5.81,5.81 0 0 1 7,1.55 5.75,5.75 0 0 1 13,7.39 c 0,0.94 0,1 0,1 h 1 A 7,7 0 0 0 7,0.32"
+         class="cls-1"
+         inkscape:connector-curvature="0"
+         style="fill:#231f20" />
+      <path
+         id="path21773"
+         transform="translate(0,-0.17)"
+         d="M 4,6.39 H 2.37 v 1 c 0,0 0,4.68 4.72,4.68 A 5.19,5.19 0 0 0 10,11 L 9.29,10.27 A 3.65,3.65 0 0 1 3.41,7.37 H 6.44 L 1.83,2.63 A 7,7 0 0 0 0.23,5.58 L 1.81,4.11 Z m 6.83,5.51 A 5.79,5.79 0 0 1 7,13.27 5.8,5.8 0 0 1 1.13,7.43 c 0,-0.87 0,-1 0,-1 H 0.07 a 7.2,7.2 0 0 0 -0.07,1 7,7 0 0 0 11.65,5.34 z"
+         class="cls-1"
+         inkscape:connector-curvature="0"
+         style="fill:#231f20" />
+      <path
+         id="path21775"
+         transform="translate(0,-0.17)"
+         d="m 13.34,0.17 a 0.89,0.89 0 1 1 -0.89,0.88 0.88,0.88 0 0 1 0.89,-0.88 m 0,1.64 a 0.73,0.73 0 0 0 0.73,-0.76 0.73,0.73 0 1 0 -1.46,0 0.73,0.73 0 0 0 0.73,0.76 M 13,0.54 h 0.4 c 0.25,0 0.36,0.1 0.36,0.3 a 0.27,0.27 0 0 1 -0.27,0.28 l 0.3,0.46 H 13.62 L 13.34,1.13 H 13.17 V 1.58 H 13 Z M 13.16,1 h 0.17 c 0.14,0 0.27,0 0.27,-0.17 0,-0.17 -0.12,-0.16 -0.23,-0.16 h -0.21 z"
+         class="cls-1"
+         inkscape:connector-curvature="0"
+         style="fill:#231f20" />
+    </g>
+  </g>
+</svg>

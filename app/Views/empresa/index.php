@@ -3,16 +3,23 @@
 
     <!-- LEFT -->
     <div class="map-side">
-      <div class="sector-list" aria-label="<?= View::e(t('a11y.sectors')) ?>">
-        <?php foreach ($sectores as $s): ?>
-        <div class="sector-circle" title="<?= View::e($s['label']) ?>">
-          <img src="<?= View::e($s['img']) ?>" alt="<?= View::e($s['label']) ?>" loading="lazy">
-        </div>
-        <?php endforeach; ?>
-      </div>
       <p class="map-title"><?= View::e(t('empresa.sucursales')) ?></p>
       <div class="map-img-wrap">
         <?php View::partial('mapa-peru'); ?>
+      </div>
+
+      <div class="sectores-block">
+        <p class="sectores-title"><?= View::e(t('a11y.sectors')) ?></p>
+        <div class="sector-list">
+          <?php foreach ($sectores as $s): ?>
+          <div class="sector-item">
+            <span class="sector-circle">
+              <img src="<?= View::e($s['img']) ?>" alt="<?= View::e($s['label']) ?>" loading="lazy">
+            </span>
+            <span class="sector-name"><?= View::e($s['label']) ?></span>
+          </div>
+          <?php endforeach; ?>
+        </div>
       </div>
     </div>
 

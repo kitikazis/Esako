@@ -35,7 +35,7 @@ return [
     'footer.brochure' => 'Brochure PDF',
     'footer.hq'       => 'Main office',
     'footer.north'    => 'Northern branch',
-    'footer.rights'   => '© 2025 Esako Global SAC — All rights reserved',
+    'footer.rights'   => '© %s Esako Global SAC — All rights reserved',
     'footer.claims'   => 'Complaints Book',
 
     // Page titles (<title>)
@@ -83,6 +83,53 @@ return [
     // Home / hero
     'home.hero.h1' => 'Maximum Performance, Minimum Worry',
     'home.hero.p'  => 'At ESAKO we understand your needs and deliver solutions with the best cost-benefit ratio.<br>We provide the preventive maintenance your diesel engines deserve.',
+    'home.cta.primary'   => 'Get a maintenance quote',
+    'home.cta.secondary' => 'View services',
+
+    // Trust figures
+    'stat.years'    => 'Years of experience',
+    'stat.equipos'  => 'Equipment serviced',
+    'stat.sectores' => 'Sectors served',
+    'stat.sedes'    => 'Branches',
+    'brands.title'  => 'Brands we work with',
+    'home.svc.title' => 'Our <span>Services</span>',
+    'home.svc.sub'   => 'Maintenance and sales of engines, machinery and systems for industry.',
+    'home.svc.all'   => 'View all services',
+    'home.sol.title' => 'Our <span>Solutions</span>',
+    'home.sol.sub'   => 'Products and equipment to power your industrial operation.',
+    'home.sol.all'   => 'View all solutions',
+
+    // Service page
+    'svc.hero.title'    => 'Services',
+    'svc.hero.sub'      => 'Multi-brand maintenance and installation for engines, machinery and industrial systems, with the best cost-benefit ratio.',
+    'svc.features.title'=> 'What does our service include?',
+    'svc.feat.1.t'      => 'Specialized diagnosis',
+    'svc.feat.1.d'      => 'Accurate technical assessment with measuring equipment to catch failures early.',
+    'svc.feat.2.t'      => 'Guaranteed spare parts',
+    'svc.feat.2.d'      => 'Original components and quality consumables for a longer service life.',
+    'svc.feat.3.t'      => 'Certified technicians',
+    'svc.feat.3.d'      => 'Staff with extensive experience in diesel engines and heavy machinery.',
+    'svc.feat.4.t'      => 'Fast response',
+    'svc.feat.4.d'      => 'We minimize downtime so your operation never stops.',
+    'svc.cta.title'     => 'Does your machinery need maintenance?',
+
+    // Home — highlights band (after the banner)
+    'home.cred.1.t' => 'Multi-brand Service',
+    'home.cred.1.d' => 'Maintenance and installation for the leading engine and machinery brands.',
+    'home.cred.2.t' => 'Minimum Downtime',
+    'home.cred.2.d' => 'Fast technical support and spare parts to keep your operation running.',
+    'home.cred.3.t' => 'Nationwide Coverage',
+    'home.cred.3.d' => 'Branches in Lima and Chimbote, serving all of Peru.',
+
+    // Home — Company section
+    'home.about.eyebrow' => 'Company',
+    'home.about.title'   => 'ESAKO Global SAC',
+    'home.about.text'    => 'We are specialists in industrial solutions with the best cost-benefit ratio. We provide maintenance and sales of diesel engines, generator sets, hydraulic systems and heavy machinery, helping optimize productivity and reduce your operation downtime.',
+    'home.about.more'    => 'Learn more',
+    'home.card.motores'    => 'Engine Maintenance',
+    'home.card.grupos'     => 'Generator Sets',
+    'home.card.hidraulicos'=> 'Hydraulic Systems',
+    'home.card.maquinaria' => 'Machinery Sales',
 
     // Company
     'empresa.sucursales'  => 'Branches',
@@ -128,6 +175,7 @@ return [
     'op.c3.mod'       => 'Online',
     'op.e4'           => 'Maintenance Technician',
     'a11y.video'      => 'Watch video',
+    'a11y.scroll'     => 'Scroll to content',
     'wa.msg.interes'  => "Hello, I'm interested in:",
     'wa.msg.curso'    => "Hello, I'd like to enroll in the course:",
 

@@ -48,7 +48,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p><?= View::e(t('footer.rights')) ?></p>
+    <p><?= View::e(sprintf(t('footer.rights'), date('Y'))) ?></p>
     <div class="footer-bottom-links">
       <a href="<?= SITE_LIBRO ?>" target="_blank" rel="noopener"><?= View::e(t('footer.claims')) ?></a>
     </div>

@@ -35,7 +35,7 @@ return [
     'footer.brochure' => 'Brochure PDF',
     'footer.hq'       => 'Sede principal',
     'footer.north'    => 'Sucursal norte',
-    'footer.rights'   => '© 2025 Esako Global SAC — Todos los derechos reservados',
+    'footer.rights'   => '© %s Esako Global SAC — Todos los derechos reservados',
     'footer.claims'   => 'Libro de Reclamaciones',
 
     // Títulos de página (<title>)
@@ -83,6 +83,53 @@ return [
     // Home / hero
     'home.hero.h1' => 'Máximo Rendimiento y Mínima Preocupación',
     'home.hero.p'  => 'En ESAKO interpretamos tus necesidades y brindamos soluciones con la mejor relación costo beneficio.<br>Realizamos el mantenimiento preventivo que tus motores diesel merecen.',
+    'home.cta.primary'   => 'Cotiza tu mantenimiento',
+    'home.cta.secondary' => 'Ver servicios',
+
+    // Cifras de confianza
+    'stat.years'    => 'Años de experiencia',
+    'stat.equipos'  => 'Equipos atendidos',
+    'stat.sectores' => 'Sectores atendidos',
+    'stat.sedes'    => 'Sedes',
+    'brands.title'  => 'Marcas que trabajamos',
+    'home.svc.title' => 'Nuestros <span>Servicios</span>',
+    'home.svc.sub'   => 'Mantenimiento y venta de motores, maquinaria y sistemas para la industria.',
+    'home.svc.all'   => 'Ver todos los servicios',
+    'home.sol.title' => 'Nuestras <span>Soluciones</span>',
+    'home.sol.sub'   => 'Productos y equipos para potenciar tu operación industrial.',
+    'home.sol.all'   => 'Ver todas las soluciones',
+
+    // Página Servicio
+    'svc.hero.title'    => 'Servicios',
+    'svc.hero.sub'      => 'Mantenimiento e instalación multimarca para motores, maquinaria y sistemas industriales, con la mejor relación costo-beneficio.',
+    'svc.features.title'=> '¿Qué incluye nuestro servicio?',
+    'svc.feat.1.t'      => 'Diagnóstico especializado',
+    'svc.feat.1.d'      => 'Evaluación técnica precisa con equipos de medición para detectar fallas a tiempo.',
+    'svc.feat.2.t'      => 'Repuestos garantizados',
+    'svc.feat.2.d'      => 'Componentes originales y consumibles de calidad para una mayor vida útil.',
+    'svc.feat.3.t'      => 'Técnicos certificados',
+    'svc.feat.3.d'      => 'Personal con amplia experiencia en motores diésel y maquinaria pesada.',
+    'svc.feat.4.t'      => 'Respuesta rápida',
+    'svc.feat.4.d'      => 'Minimizamos el tiempo de inactividad para no detener tu operación.',
+    'svc.cta.title'     => '¿Tu maquinaria necesita mantenimiento?',
+
+    // Home — franja de destacados (después del banner)
+    'home.cred.1.t' => 'Servicio Multimarca',
+    'home.cred.1.d' => 'Mantenimiento e instalación para las principales marcas de motores y maquinaria.',
+    'home.cred.2.t' => 'Mínimo Tiempo de Inactividad',
+    'home.cred.2.d' => 'Respuesta rápida en soporte técnico y repuestos para tu operación.',
+    'home.cred.3.t' => 'Cobertura Nacional',
+    'home.cred.3.d' => 'Sedes en Lima y Chimbote, atendiendo todo el Perú.',
+
+    // Home — sección Empresa
+    'home.about.eyebrow' => 'Empresa',
+    'home.about.title'   => 'ESAKO Global SAC',
+    'home.about.text'    => 'Somos especialistas en soluciones industriales con la mejor relación costo-beneficio. Brindamos mantenimiento y venta de motores diésel, grupos electrógenos, sistemas hidráulicos y maquinaria pesada, ayudando a optimizar la productividad y reducir los tiempos de inactividad de tu operación.',
+    'home.about.more'    => 'Ver más',
+    'home.card.motores'    => 'Mantenimiento de Motores',
+    'home.card.grupos'     => 'Grupos Electrógenos',
+    'home.card.hidraulicos'=> 'Sistemas Hidráulicos',
+    'home.card.maquinaria' => 'Venta de Maquinaria',
 
     // Empresa
     'empresa.sucursales'  => 'Sucursales',
@@ -128,6 +175,7 @@ return [
     'op.c3.mod'       => 'En línea',
     'op.e4'           => 'Técnico de Mantenimiento',
     'a11y.video'      => 'Ver video',
+    'a11y.scroll'     => 'Bajar al contenido',
     'wa.msg.interes'  => 'Hola, me interesa:',
     'wa.msg.curso'    => 'Hola, quiero inscribirme en el curso:',
 
