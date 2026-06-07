@@ -563,13 +563,21 @@ p { text-wrap: pretty; }
 .sector-circle:hover { transform: scale(1.1); border-color: var(--cyan); }
 .sector-circle img { width: 100%; height: 100%; object-fit: cover; }
 
-/* Right content */
+/* Right content — panel legible (frosted) sobre la foto */
 .content-side {
-  padding: 40px 52px 40px 28px;
+  padding: 44px 64px 44px 48px;
   display: flex; flex-direction: column;
-  justify-content: center; gap: 28px;
+  justify-content: center; gap: 26px;
+  background: rgba(244,246,248,.94);
+  backdrop-filter: blur(4px);
+  border-radius: 16px 0 0 16px;
+  box-shadow: -10px 0 44px rgba(10,22,32,.22);
 }
-.content-block { max-width: 540px; }
+.content-block { max-width: 560px; }
+.contacto-phone { font-size: 14px; color: var(--text); margin-top: 8px; }
+.contacto-phone a { color: var(--navy); font-weight: 700; transition: color .2s; }
+.contacto-phone a:hover { color: var(--accent-dk); }
+.contacto-cta { margin-top: 16px; align-self: flex-start; }
 .content-block h2 {
   font-size: 16px; font-weight: 800;
   letter-spacing: 1.8px; color: var(--text);

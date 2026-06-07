@@ -94,6 +94,8 @@ return [
     'empresa.valores.h'   => 'Valores',
     'empresa.valores.p'   => 'Integridad &nbsp;–&nbsp; Seguridad &nbsp;–&nbsp; Diversidad &nbsp;–&nbsp; Responsabilidad ambiental &nbsp;–&nbsp; Vocación de servicio',
     'empresa.contacto.h'  => 'Contacto',
+    'empresa.phone'       => 'Tel. / WhatsApp',
+    'empresa.cta'         => 'Cotizar por WhatsApp',
 
     // Oportunidades
     'oport.boletines' => 'Boletines',

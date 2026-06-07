@@ -49,7 +49,7 @@ $lang = Lang::current();
           </ul>
         </li>
         <li><a href="<?= BASE_URL ?>/oportunidades" <?= $p==='oportunidades'?'class="active" aria-current="page"':'' ?>><?= View::e(t('nav.oportunidades')) ?></a></li>
-        <li><a href="#"><?= View::e(t('nav.clientes')) ?></a></li>
+        <li><a href="<?= BASE_URL ?>/clientes" <?= $p==='clientes'?'class="active" aria-current="page"':'' ?>><?= View::e(t('nav.clientes')) ?></a></li>
         <li><a href="#"><?= View::e(t('nav.usuarios')) ?></a></li>
 
         <!-- Selector de idioma -->
