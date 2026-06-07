@@ -1,5 +1,5 @@
 <!-- ══ HERO SLIDER ═══════════════════════════ -->
-<div class="hero" id="hero" aria-label="Carrusel principal">
+<div class="hero" id="hero" aria-label="<?= View::e(t('a11y.carousel')) ?>">
 <?php foreach ($slides as $img): ?>
   <div class="slide" style="background-image:url('<?= View::e($img) ?>')"></div>
 <?php endforeach; ?>
@@ -9,8 +9,8 @@
   </div>
 </div>
 
-<!-- ══ SERVICES GRID ══════════════════════════ -->
-<div class="svc-grid" aria-label="Servicios y soluciones">
+<!-- ══ SERVICES eGRID ══════════════════════════ -->
+<div class="svc-grid" aria-label="<?= View::e(t('a11y.svcgrid')) ?>">
 <?php foreach ($servicios as $s): ?>
   <div class="svc-item">
     <img src="<?= View::e($s['img']) ?>" alt="<?= View::e($s['titulo']) ?>" loading="lazy">

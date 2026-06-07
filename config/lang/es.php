@@ -3,7 +3,13 @@
 return [
     // Meta
     'site.tagline' => 'Brindamos soluciones con mejor relación costo beneficio',
-    'a11y.skip'    => 'Ir al contenido',
+    'a11y.skip'       => 'Ir al contenido',
+    'a11y.nav'        => 'Navegación principal',
+    'a11y.menu_open'  => 'Abrir menú',
+    'a11y.quicklinks' => 'Accesos rápidos',
+    'a11y.carousel'   => 'Carrusel principal',
+    'a11y.svcgrid'    => 'Servicios y soluciones',
+    'a11y.sectors'    => 'Sectores que atendemos',
 
     // Títulos de página (<title>)
     'title.inicio'        => 'Inicio – Esako Global SAC',

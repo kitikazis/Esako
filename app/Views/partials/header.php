@@ -13,7 +13,7 @@ $lang = Lang::current();
       <span class="logo-fallback" style="display:none;">ESAKO</span>
     </a>
 
-    <nav class="site-nav" id="site-nav" aria-label="<?= $lang==='en'?'Main navigation':'Navegación principal' ?>">
+    <nav class="site-nav" id="site-nav" aria-label="<?= View::e(t('a11y.nav')) ?>">
       <ul class="nav-list">
         <li><a href="<?= BASE_URL ?>/" <?= $p==='inicio'   ?'class="active" aria-current="page"':'' ?>><?= View::e(t('nav.inicio')) ?></a></li>
         <li><a href="<?= BASE_URL ?>/empresa" <?= $p==='empresa'  ?'class="active" aria-current="page"':'' ?>><?= View::e(t('nav.empresa')) ?></a></li>
@@ -77,7 +77,7 @@ $lang = Lang::current();
     </nav>
 
     <button class="nav-toggle" id="nav-toggle"
-            aria-label="<?= $lang==='en'?'Open menu':'Abrir menú' ?>" aria-expanded="false"
+            aria-label="<?= View::e(t('a11y.menu_open')) ?>" aria-expanded="false"
             aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>

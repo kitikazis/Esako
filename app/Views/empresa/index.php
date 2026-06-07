@@ -3,7 +3,7 @@
 
     <!-- LEFT -->
     <div class="map-side">
-      <div class="sector-list" aria-label="Sectores que atendemos">
+      <div class="sector-list" aria-label="<?= View::e(t('a11y.sectors')) ?>">
         <?php foreach ($sectores as $s): ?>
         <div class="sector-circle" title="<?= View::e($s['label']) ?>">
           <img src="<?= View::e($s['img']) ?>" alt="<?= View::e($s['label']) ?>" loading="lazy">

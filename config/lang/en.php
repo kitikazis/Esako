@@ -3,7 +3,13 @@
 return [
     // Meta
     'site.tagline' => 'We deliver solutions with the best cost-benefit ratio',
-    'a11y.skip'    => 'Skip to content',
+    'a11y.skip'       => 'Skip to content',
+    'a11y.nav'        => 'Main navigation',
+    'a11y.menu_open'  => 'Open menu',
+    'a11y.quicklinks' => 'Quick links',
+    'a11y.carousel'   => 'Main carousel',
+    'a11y.svcgrid'    => 'Services and solutions',
+    'a11y.sectors'    => 'Sectors we serve',
 
     // Page titles (<title>)
     'title.inicio'        => 'Home – Esako Global SAC',
