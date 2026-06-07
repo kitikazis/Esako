@@ -12,10 +12,7 @@
       </div>
       <p class="map-title"><?= View::e(t('empresa.sucursales')) ?></p>
       <div class="map-img-wrap">
-        <img src="https://esako.com.pe/wp-content/uploads/2025/10/mapadeesakofinal-1.webp"
-             alt="<?= View::e(t('empresa.sucursales')) ?> Esako" loading="lazy">
-        <span class="map-lbl chimbote">CHIMBOTE</span>
-        <span class="map-lbl lima">LIMA</span>
+        <?php View::partial('mapa-peru'); ?>
       </div>
     </div>
 

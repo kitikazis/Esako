@@ -10,6 +10,7 @@ return [
     'a11y.carousel'   => 'Carrusel principal',
     'a11y.svcgrid'    => 'Servicios y soluciones',
     'a11y.sectors'    => 'Sectores que atendemos',
+    'a11y.map'        => 'Mapa del Perú con las sedes de Esako: Chimbote (Áncash) y Lima',
 
     // Títulos de página (<title>)
     'title.inicio'        => 'Inicio – Esako Global SAC',

@@ -500,8 +500,44 @@ p { text-wrap: pretty; }
   text-transform: uppercase; margin-bottom: 18px;
   align-self: center;
 }
-.map-img-wrap { position: relative; width: 100%; max-width: 300px; }
+.map-img-wrap { position: relative; width: 100%; max-width: 340px; }
 .map-img-wrap img { width: 100%; height: auto; }
+
+/* ── Mapa interactivo del Perú (departamentos) ─────────────── */
+.peru-map { width: 100%; height: auto; display: block; overflow: visible; }
+.peru-map .dep {
+  fill: var(--graphite);
+  stroke: rgba(255,255,255,.14);
+  stroke-width: .6;
+  transition: fill .2s var(--ease);
+}
+.peru-map .dep:hover { fill: #2c3e57; cursor: pointer; }
+.peru-map .dep.sede { fill: var(--accent); }
+.peru-map .dep.sede:hover { fill: var(--accent-lt); }
+
+.peru-map .map-marker { pointer-events: none; }
+.peru-map .map-marker .pin {
+  fill: #fff; stroke: var(--accent); stroke-width: 2;
+}
+.peru-map .map-marker .pulse {
+  fill: var(--accent); opacity: .6;
+  transform-box: fill-box; transform-origin: center;
+  animation: mapPulse 2.2s var(--ease) infinite;
+}
+@keyframes mapPulse {
+  0%   { transform: scale(1);   opacity: .6; }
+  70%  { transform: scale(2.8); opacity: 0; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+.peru-map .map-pin-label {
+  fill: #fff; font-family: var(--font-head, sans-serif);
+  font-size: 14px; font-weight: 700; letter-spacing: .5px;
+  paint-order: stroke; stroke: rgba(8,15,26,.7); stroke-width: 3px;
+  dominant-baseline: middle;
+}
+@media (prefers-reduced-motion: reduce) {
+  .peru-map .map-marker .pulse { animation: none; opacity: 0; }
+}
 .map-lbl {
   position: absolute; font-size: 11px; font-weight: 800;
   color: var(--text); letter-spacing: 1px; text-transform: uppercase;

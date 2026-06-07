@@ -10,6 +10,7 @@ return [
     'a11y.carousel'   => 'Main carousel',
     'a11y.svcgrid'    => 'Services and solutions',
     'a11y.sectors'    => 'Sectors we serve',
+    'a11y.map'        => 'Map of Peru with Esako branches: Chimbote (Áncash) and Lima',
 
     // Page titles (<title>)
     'title.inicio'        => 'Home – Esako Global SAC',
