@@ -196,6 +196,34 @@
   }
 
   /* ══════════════════════════════════════════════════════
+     OPORTUNIDADES TABS — scrollspy de la sección visible
+  ══════════════════════════════════════════════════════ */
+  function initOportTabs() {
+    var links = Array.from(document.querySelectorAll('.oport-tab-link'));
+    if (!links.length || !('IntersectionObserver' in window)) return;
+
+    var map = {};
+    links.forEach(function (a) {
+      var id = (a.getAttribute('href') || '').replace('#', '');
+      if (id) map[id] = a;
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (l) { l.classList.remove('active'); });
+        var active = map[entry.target.id];
+        if (active) active.classList.add('active');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+
+    Object.keys(map).forEach(function (id) {
+      var sec = document.getElementById(id);
+      if (sec) observer.observe(sec);
+    });
+  }
+
+  /* ══════════════════════════════════════════════════════
      INIT
   ══════════════════════════════════════════════════════ */
   document.addEventListener('DOMContentLoaded', function () {
@@ -203,6 +231,7 @@
     initScrollShadow();
     initSlider();
     initLazyImages();
+    initOportTabs();
   });
 
 })();
