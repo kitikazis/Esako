@@ -9,6 +9,9 @@ define('SITE_TAGLINE', 'Brindamos soluciones con mejor relación costo beneficio
 define('SITE_EMAIL',   'esako@esako.com.pe');
 define('SITE_WA',      'https://wa.link/cvk0tg');
 define('SITE_WA_SOL',  'https://wa.link/rzkfmm');
+// Números de WhatsApp (para construir el enlace con mensaje predeterminado)
+define('SITE_WA_PHONE',     '51989011140');
+define('SITE_WA_PHONE_SOL', '51997540524');
 define('SITE_TIENDA',  'https://esako.com.pe/tienda/');
 define('SITE_BROCHURE','https://esako.com.pe/wp-content/uploads/2025/10/BROCHURE-ESAKO-1-1.pdf');
 define('SITE_LIBRO',   'https://esako.com.pe/libro-de-reclamaciones/');

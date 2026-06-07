@@ -16,6 +16,18 @@ class View {
      * la versión nueva cada vez que el archivo cambia (sin Ctrl+F5).
      * Ej: View::asset('css/main.css') -> /public/css/main.css?v=1717700000
      */
+    /**
+     * Construye un enlace de WhatsApp con mensaje predeterminado.
+     * Ej: View::wa(SITE_WA_PHONE, 'Hola...') -> https://wa.me/51...?text=Hola...
+     */
+    public static function wa(string $phone, string $msg = ''): string {
+        $url = 'https://wa.me/' . preg_replace('/\D/', '', $phone);
+        if ($msg !== '') {
+            $url .= '?text=' . rawurlencode($msg);
+        }
+        return $url;
+    }
+
     public static function asset(string $path): string {
         $path = ltrim($path, '/');
         $url  = ASSETS_URL . '/' . $path;

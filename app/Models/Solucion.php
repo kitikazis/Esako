@@ -8,7 +8,7 @@ class Solucion {
                 'titulo'      => t('sol.consumibles'),
                 'img'         => "{$cdn}/2025/09/5.jpg",
                 'alt'         => t('sol.consumibles'),
-                'cta_wa'      => SITE_WA_SOL,
+                'cta_wa'      => View::wa(SITE_WA_PHONE_SOL, t('wa.msg.sol')),
                 'cta_tienda'  => SITE_TIENDA,
             ],
             [

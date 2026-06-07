@@ -17,6 +17,10 @@ return [
     'a11y.next'       => 'Next',
     'a11y.wa'         => 'Contact via WhatsApp',
 
+    // Default WhatsApp messages
+    'wa.msg.default'  => 'Hello, I would like more information about ESAKO.',
+    'wa.msg.sol'      => 'Hello, I would like more information about ESAKO products.',
+
     // Footer
     'footer.tagline'  => 'Best Cost-Benefit Ratio',
     'footer.desc'     => 'Specialists in industrial solutions for the mining, fishing, construction, automotive and energy sectors.',

@@ -921,8 +921,11 @@ p { text-wrap: pretty; }
 .footer-location {
   display: flex; align-items: flex-start; gap: 8px; margin-bottom: 10px;
 }
+a.footer-location { transition: transform .15s var(--ease); }
+a.footer-location:hover { transform: translateX(2px); }
+a.footer-location:hover .footer-loc-city { color: #fff; }
 .footer-loc-pin { color: var(--cyan); flex-shrink: 0; margin-top: 2px; }
-.footer-loc-city { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.65); display: block; }
+.footer-loc-city { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.65); display: block; transition: color .2s; }
 .footer-loc-label { font-size: 11px; color: rgba(255,255,255,.3); }
 .footer-social-row { display: flex; gap: 8px; margin-top: 18px; }
 .footer-soc-btn {
@@ -932,6 +935,21 @@ p { text-wrap: pretty; }
   color: rgba(255,255,255,.5); transition: background .2s, color .2s;
 }
 .footer-soc-btn:hover { background: var(--cyan); color: var(--white); }
+
+/* ── Colores de marca de las redes sociales (hover) ────────── */
+/* Aplica al footer y al sidebar derecho */
+.footer-soc-btn[title="YouTube"]:hover,
+.side-bar a[title="YouTube"]:hover    { background: #ff0000; color: #fff; }
+.footer-soc-btn[title="Instagram"]:hover,
+.side-bar a[title="Instagram"]:hover  { background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); color: #fff; }
+.footer-soc-btn[title="LinkedIn"]:hover,
+.side-bar a[title="LinkedIn"]:hover   { background: #0a66c2; color: #fff; }
+.footer-soc-btn[title="TikTok"]:hover,
+.side-bar a[title="TikTok"]:hover     { background: #ffffff; color: #010101; }
+.footer-soc-btn[title="Facebook"]:hover,
+.side-bar a[title="Facebook"]:hover   { background: #1877f2; color: #fff; }
+.side-bar a[title="WhatsApp"]:hover   { background: #25d366; color: #fff; }
+
 .footer-bottom {
   max-width: 1200px; margin: 0 auto; padding: 18px 40px;
   display: flex; justify-content: space-between; align-items: center;

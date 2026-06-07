@@ -17,6 +17,10 @@ return [
     'a11y.next'       => 'Siguiente',
     'a11y.wa'         => 'Contactar por WhatsApp',
 
+    // Mensajes predeterminados de WhatsApp
+    'wa.msg.default'  => 'Hola, quiero más información sobre ESAKO.',
+    'wa.msg.sol'      => 'Hola, quiero más información sobre los productos de ESAKO.',
+
     // Footer
     'footer.tagline'  => 'Mejor Relación Costo Beneficio',
     'footer.desc'     => 'Especialistas en soluciones industriales para los sectores de minería, pesca, construcción, automotriz y energía.',
