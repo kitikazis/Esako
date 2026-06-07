@@ -3,13 +3,11 @@ class Servicio {
     /** Imágenes del hero slider */
     public static function getSlideImages(): array {
         $cdn = CDN;
+        // Imágenes HD locales (1920px) de uso libre — ver public/img/banner/CREDITS.txt
         return [
-            "{$cdn}/2025/10/4-2.jpg",
-            "{$cdn}/2025/10/2-4.jpg",
-            "{$cdn}/2025/10/3-3.jpg",
-            "{$cdn}/2025/10/4-3.jpg",
-            "{$cdn}/2025/10/9.jpg",
-            "{$cdn}/2025/10/1-4.jpg",
+            View::asset('img/banner/excavadora.jpg'),
+            View::asset('img/banner/motor.jpg'),
+            View::asset('img/banner/grupo.jpg'),
         ];
     }
 

@@ -1,0 +1,22 @@
+Imágenes del banner — fuente y licencia (Wikimedia Commons)
+============================================================
+Estas imágenes son de uso libre pero requieren atribución según su licencia.
+Recomendado: reemplazarlas por fotos propias de ESAKO en alta resolución
+(no requieren atribución y son más auténticas).
+
+1) excavadora.jpg
+   Original: "Caterpillar 330 excavator on a pile of dirt"
+   Fuente: https://commons.wikimedia.org/wiki/File:Caterpillar_330_excavator_on_a_pile_of_dirt.jpg
+   Licencia: CC BY-SA 4.0
+
+2) motor.jpg
+   Original: "Mechanic works on car engine performing routine maintenance and inspections on vehicle parts"
+   Fuente: https://commons.wikimedia.org/wiki/File:Mechanic_works_on_car_engine_performing_routine_maintenance_and_inspections_on_vehicle_parts.jpg
+   Licencia: CC BY 2.0
+
+3) grupo.jpg
+   Original: "Kirloskar - Silent Diesel Generator Set - Mathura 2013-02-24 6663"
+   Fuente: https://commons.wikimedia.org/wiki/File:Kirloskar_-_Silent_Diesel_Generator_Set_-_Mathura_2013-02-24_6663.JPG
+   Licencia: CC BY 3.0
+
+Nota: imágenes redimensionadas a 1920 px de ancho y optimizadas para web.

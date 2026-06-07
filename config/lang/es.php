@@ -223,6 +223,13 @@ return [
     'sol.motores'     => "MOTORES\nDIESEL",
     'sol.grupos'      => "GRUPOS\nELECTRÓGENOS",
     'sol.excavadoras' => "EXCAVADORAS",
+    'sol.consumibles.desc' => 'Repuestos, filtros, mangueras y consumibles de calidad para mantener tu maquinaria operativa.',
+    'sol.motores.desc'     => 'Motores diésel industriales y marinos, nuevos y reacondicionados, listos para trabajar.',
+    'sol.grupos.desc'      => 'Grupos electrógenos confiables para asegurar energía continua en tu operación.',
+    'sol.excavadoras.desc' => 'Excavadoras y maquinaria pesada para proyectos de construcción y minería.',
+    'sol.hero.title'  => 'Soluciones',
+    'sol.hero.sub'    => 'Productos, equipos y repuestos para mantener tu operación funcionando sin interrupciones.',
+    'sol.cta.title'   => '¿Buscas un equipo o repuesto específico?',
 
     // Boletines (9)
     'op.b1' => '15% de descuento en mantenimiento',

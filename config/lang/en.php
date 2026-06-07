@@ -223,6 +223,13 @@ return [
     'sol.motores'     => "DIESEL\nENGINES",
     'sol.grupos'      => "GENERATOR\nSETS",
     'sol.excavadoras' => "EXCAVATORS",
+    'sol.consumibles.desc' => 'Quality spare parts, filters, hoses and consumables to keep your machinery running.',
+    'sol.motores.desc'     => 'Industrial and marine diesel engines, new and reconditioned, ready to work.',
+    'sol.grupos.desc'      => 'Reliable generator sets to ensure continuous power for your operation.',
+    'sol.excavadoras.desc' => 'Excavators and heavy machinery for construction and mining projects.',
+    'sol.hero.title'  => 'Solutions',
+    'sol.hero.sub'    => 'Products, equipment and spare parts to keep your operation running without interruptions.',
+    'sol.cta.title'   => 'Looking for a specific equipment or part?',
 
     // Newsletters (9)
     'op.b1' => '15% off on maintenance',

@@ -384,6 +384,9 @@ p { text-wrap: pretty; }
 
 .svc-section { padding: 72px 0; background: var(--white); }
 .sol-section { background: var(--light-bg); }
+.sol-card-ctas { display: flex; flex-direction: column; gap: 8px; }
+.curso-cta.cta-alt { background: var(--navy); color: #fff; }
+.curso-cta.cta-alt:hover { background: var(--navy-light); }
 .section-head { text-align: center; max-width: 640px; margin: 0 auto 40px; padding: 0 24px; }
 .section-head h2 {
   font-size: 26px; font-weight: 800; color: var(--navy);
@@ -1043,7 +1046,7 @@ p { text-wrap: pretty; }
 a.footer-location { transition: transform .15s var(--ease); }
 a.footer-location:hover { transform: translateX(2px); }
 a.footer-location:hover .footer-loc-city { color: #fff; }
-.footer-loc-pin { color: var(--cyan); flex-shrink: 0; margin-top: 2px; }
+.footer-loc-pin { color: #fff; flex-shrink: 0; margin-top: 2px; }
 .footer-loc-city { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.65); display: block; transition: color .2s; }
 .footer-loc-label { font-size: 11px; color: rgba(255,255,255,.3); }
 .footer-social-row { display: flex; gap: 8px; margin-top: 18px; }
