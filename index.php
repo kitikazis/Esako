@@ -1,6 +1,9 @@
 <?php
 define('BASE_PATH', __DIR__);
-define('BASE_URL', '/dashboard/mvc.1');   // subfolder under htdocs
+// Detecta la ruta base automáticamente: funciona en la raíz del dominio
+// (InfinityFree) y en subcarpetas (XAMPP) sin editar nada.
+$basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
+define('BASE_URL', $basePath === '/' ? '' : $basePath);
 
 spl_autoload_register(function ($class) {
     $paths = [

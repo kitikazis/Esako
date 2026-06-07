@@ -1,12 +1,11 @@
 Options -Indexes
 RewriteEngine On
-RewriteBase /dashboard/mvc.1/
 
 # Serve existing files/dirs directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Route everything else to index.php
+# Route everything else to index.php (relativo: funciona en raiz o subcarpeta)
 RewriteRule ^(.*)$ index.php [QSA,L]
 
 # ── Caché ───────────────────────────────────────────────────
