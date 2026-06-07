@@ -11,6 +11,28 @@ return [
     'a11y.svcgrid'    => 'Servicios y soluciones',
     'a11y.sectors'    => 'Sectores que atendemos',
     'a11y.map'        => 'Mapa del Perú con las sedes de Esako: Chimbote (Áncash) y Lima',
+    'a11y.slides'     => 'Diapositivas',
+    'a11y.slide'      => 'Diapositiva',
+    'a11y.prev'       => 'Anterior',
+    'a11y.next'       => 'Siguiente',
+    'a11y.wa'         => 'Contactar por WhatsApp',
+
+    // Footer
+    'footer.tagline'  => 'Mejor Relación Costo Beneficio',
+    'footer.desc'     => 'Especialistas en soluciones industriales para los sectores de minería, pesca, construcción, automotriz y energía.',
+    'footer.pages'    => 'Páginas',
+    'footer.contact'  => 'Contacto',
+    'footer.home'     => 'Inicio',
+    'footer.company'  => 'Empresa',
+    'footer.services' => 'Servicios',
+    'footer.solutions'=> 'Soluciones',
+    'footer.opps'     => 'Oportunidades',
+    'footer.store'    => 'Tienda Online',
+    'footer.brochure' => 'Brochure PDF',
+    'footer.hq'       => 'Sede principal',
+    'footer.north'    => 'Sucursal norte',
+    'footer.rights'   => '© 2025 Esako Global SAC — Todos los derechos reservados',
+    'footer.claims'   => 'Libro de Reclamaciones',
 
     // Títulos de página (<title>)
     'title.inicio'        => 'Inicio – Esako Global SAC',

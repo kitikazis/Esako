@@ -23,6 +23,19 @@ $baseUrl   = BASE_URL;
     <?= $content ?>
   </main>
 
+  <?php View::partial('footer'); ?>
+
+  <script>
+    window.ESAKO = {
+      lang: <?= json_encode(Lang::current()) ?>,
+      i18n: {
+        slides: <?= json_encode(t('a11y.slides')) ?>,
+        slide:  <?= json_encode(t('a11y.slide')) ?>,
+        prev:   <?= json_encode(t('a11y.prev')) ?>,
+        next:   <?= json_encode(t('a11y.next')) ?>
+      }
+    };
+  </script>
   <script src="<?= View::asset('js/main.js') ?>"></script>
 </body>
 </html>

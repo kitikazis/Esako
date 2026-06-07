@@ -11,6 +11,28 @@ return [
     'a11y.svcgrid'    => 'Services and solutions',
     'a11y.sectors'    => 'Sectors we serve',
     'a11y.map'        => 'Map of Peru with Esako branches: Chimbote (Áncash) and Lima',
+    'a11y.slides'     => 'Slides',
+    'a11y.slide'      => 'Slide',
+    'a11y.prev'       => 'Previous',
+    'a11y.next'       => 'Next',
+    'a11y.wa'         => 'Contact via WhatsApp',
+
+    // Footer
+    'footer.tagline'  => 'Best Cost-Benefit Ratio',
+    'footer.desc'     => 'Specialists in industrial solutions for the mining, fishing, construction, automotive and energy sectors.',
+    'footer.pages'    => 'Pages',
+    'footer.contact'  => 'Contact',
+    'footer.home'     => 'Home',
+    'footer.company'  => 'Company',
+    'footer.services' => 'Services',
+    'footer.solutions'=> 'Solutions',
+    'footer.opps'     => 'Opportunities',
+    'footer.store'    => 'Online Store',
+    'footer.brochure' => 'Brochure PDF',
+    'footer.hq'       => 'Main office',
+    'footer.north'    => 'Northern branch',
+    'footer.rights'   => '© 2025 Esako Global SAC — All rights reserved',
+    'footer.claims'   => 'Complaints Book',
 
     // Page titles (<title>)
     'title.inicio'        => 'Home – Esako Global SAC',
