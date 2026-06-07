@@ -53,6 +53,7 @@ return [
     'nav.soluciones'    => 'SOLUCIONES',
     'nav.oportunidades' => 'OPORTUNIDADES',
     'nav.clientes'      => 'CLIENTES',
+    'nav.tienda'        => 'TIENDA',
     'nav.usuarios'      => 'USUARIOS',
 
     // Submenú Servicio
@@ -230,6 +231,19 @@ return [
     'sol.hero.title'  => 'Soluciones',
     'sol.hero.sub'    => 'Productos, equipos y repuestos para mantener tu operación funcionando sin interrupciones.',
     'sol.cta.title'   => '¿Buscas un equipo o repuesto específico?',
+
+    // Tienda
+    'shop.title'        => 'Tienda',
+    'shop.sub'          => 'Repuestos, lubricantes, filtros y consumibles para tu maquinaria.',
+    'shop.filter.price' => 'Filtrar por precio',
+    'shop.filter.btn'   => 'Filtrar',
+    'shop.filter.clear' => 'Limpiar filtro',
+    'shop.empty'        => 'No hay productos en ese rango de precio.',
+    'shop.categories'   => 'Categorías',
+    'shop.bestsellers'  => 'Más vendidos',
+    'shop.showing'      => 'Mostrando %d resultados',
+    'shop.add'          => 'Cotizar',
+    'shop.cat.equipos'  => 'Equipos',
 
     // Boletines (9)
     'op.b1' => '15% de descuento en mantenimiento',

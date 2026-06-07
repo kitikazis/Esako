@@ -224,6 +224,47 @@
   }
 
   /* ══════════════════════════════════════════════════════
+     TIENDA — filtro de precio en tiempo real (doble rango)
+  ══════════════════════════════════════════════════════ */
+  function initShopFilter() {
+    var box = document.getElementById('price-filter');
+    if (!box) return;
+    var minI = document.getElementById('price-min');
+    var maxI = document.getElementById('price-max');
+    var fill = document.getElementById('range-fill');
+    var minLbl = document.getElementById('price-min-lbl');
+    var maxLbl = document.getElementById('price-max-lbl');
+    var clearBtn = document.getElementById('price-clear');
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.shop-card[data-price]'));
+    var countEl = document.querySelector('.shop-count');
+    var tpl = countEl ? countEl.getAttribute('data-tpl') : '';
+    var lo0 = +minI.min, hi0 = +maxI.max;
+    function fmt(n) { return n.toLocaleString('es-PE'); }
+    function apply() {
+      var lo = +minI.value, hi = +maxI.value;
+      if (lo > hi) { var t = lo; lo = hi; hi = t; }
+      minLbl.textContent = fmt(lo);
+      maxLbl.textContent = fmt(hi);
+      var span = hi0 - lo0 || 1;
+      fill.style.left = ((lo - lo0) / span * 100) + '%';
+      fill.style.right = ((hi0 - hi) / span * 100) + '%';
+      var shown = 0;
+      cards.forEach(function (c) {
+        var ok = +c.getAttribute('data-price') >= lo && +c.getAttribute('data-price') <= hi;
+        c.style.display = ok ? '' : 'none';
+        if (ok) shown++;
+      });
+      if (countEl && tpl) countEl.textContent = tpl.replace('%d', shown);
+    }
+    minI.addEventListener('input', apply);
+    maxI.addEventListener('input', apply);
+    if (clearBtn) clearBtn.addEventListener('click', function () {
+      minI.value = lo0; maxI.value = hi0; apply();
+    });
+    apply();
+  }
+
+  /* ══════════════════════════════════════════════════════
      INIT
   ══════════════════════════════════════════════════════ */
   document.addEventListener('DOMContentLoaded', function () {
@@ -232,6 +273,7 @@
     initSlider();
     initLazyImages();
     initOportTabs();
+    initShopFilter();
   });
 
 })();

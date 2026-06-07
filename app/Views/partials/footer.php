@@ -23,7 +23,7 @@
       <div class="footer-links">
         <a href="mailto:<?= SITE_EMAIL ?>"><?= SITE_EMAIL ?></a>
         <a href="<?= View::e(View::wa(SITE_WA_PHONE, t('wa.msg.default'))) ?>" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="<?= SITE_TIENDA ?>" target="_blank" rel="noopener"><?= View::e(t('footer.store')) ?></a>
+        <a href="<?= $bu ?>/tienda"><?= View::e(t('footer.store')) ?></a>
         <a href="<?= SITE_BROCHURE ?>" target="_blank" rel="noopener"><?= View::e(t('footer.brochure')) ?></a>
       </div>
     </div>

@@ -53,6 +53,7 @@ return [
     'nav.soluciones'    => 'SOLUTIONS',
     'nav.oportunidades' => 'OPPORTUNITIES',
     'nav.clientes'      => 'CLIENTS',
+    'nav.tienda'        => 'STORE',
     'nav.usuarios'      => 'USERS',
 
     // Services submenu
@@ -230,6 +231,19 @@ return [
     'sol.hero.title'  => 'Solutions',
     'sol.hero.sub'    => 'Products, equipment and spare parts to keep your operation running without interruptions.',
     'sol.cta.title'   => 'Looking for a specific equipment or part?',
+
+    // Store
+    'shop.title'        => 'Store',
+    'shop.sub'          => 'Spare parts, lubricants, filters and consumables for your machinery.',
+    'shop.filter.price' => 'Filter by price',
+    'shop.filter.btn'   => 'Filter',
+    'shop.filter.clear' => 'Clear filter',
+    'shop.empty'        => 'No products in that price range.',
+    'shop.categories'   => 'Categories',
+    'shop.bestsellers'  => 'Best sellers',
+    'shop.showing'      => 'Showing %d results',
+    'shop.add'          => 'Get a quote',
+    'shop.cat.equipos'  => 'Equipment',
 
     // Newsletters (9)
     'op.b1' => '15% off on maintenance',

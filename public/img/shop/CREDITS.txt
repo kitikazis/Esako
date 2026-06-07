@@ -1,0 +1,17 @@
+Imágenes de muestra de la tienda — Wikimedia Commons
+=====================================================
+Son imágenes de ejemplo de uso libre. Verifica la licencia/atribución en la
+página de cada archivo. Recomendado: reemplazar por fotos propias de los
+productos reales de ESAKO (sin requisitos de atribución).
+
+- oil.jpg     <- "Pennzoil oil bottles.jpg"
+                 https://commons.wikimedia.org/wiki/File:Pennzoil_oil_bottles.jpg
+- filter.jpg  <- "Bosch Oil Filter.JPG"
+                 https://commons.wikimedia.org/wiki/File:Bosch_Oil_Filter.JPG
+- hose.jpg    <- "Hydraulic hose fittings.JPG"
+                 https://commons.wikimedia.org/wiki/File:Hydraulic_hose_fittings.JPG
+- grease.jpg  <- "Graphite grease - Графитовая смазка.jpg"
+                 https://commons.wikimedia.org/wiki/File:Graphite_grease_-_Графитовая_смазка.jpg
+
+Imágenes redimensionadas a 700 px y optimizadas. Asignación por tipo de
+producto en app/Views/tienda/index.php ($imgMap).

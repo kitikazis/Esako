@@ -29,6 +29,7 @@ $router->get('/servicio',      'ServicioController',    'index');
 $router->get('/soluciones',    'SolucionesController',  'index');
 $router->get('/oportunidades', 'OportunidadesController','index');
 $router->get('/clientes',      'ClientesController',    'index');
+$router->get('/tienda',        'TiendaController',      'index');
 
 $url = strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 
