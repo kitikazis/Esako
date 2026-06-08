@@ -227,8 +227,8 @@
      TIENDA — filtro de precio en tiempo real (doble rango)
   ══════════════════════════════════════════════════════ */
   function initShopFilter() {
-    var box = document.getElementById('price-filter');
-    if (!box) return;
+    var grid = document.querySelector('.shop-grid');
+    if (!grid) return;
     var minI = document.getElementById('price-min');
     var maxI = document.getElementById('price-max');
     var fill = document.getElementById('range-fill');
@@ -238,30 +238,164 @@
     var cards = Array.prototype.slice.call(document.querySelectorAll('.shop-card[data-price]'));
     var countEl = document.querySelector('.shop-count');
     var tpl = countEl ? countEl.getAttribute('data-tpl') : '';
-    var lo0 = +minI.min, hi0 = +maxI.max;
+    var empty = document.querySelector('.shop-empty');
+    var triggers = Array.prototype.slice.call(document.querySelectorAll('[data-cat]'));
+    var activeCat = 'all';
     function fmt(n) { return n.toLocaleString('es-PE'); }
+
+    // Rango de precios [min, max] de los productos de una categoría
+    function boundsFor(cat) {
+      var prices = cards.filter(function (c) {
+        var cats = (c.getAttribute('data-cats') || '').split(' ');
+        return cat === 'all' || cats.indexOf(cat) !== -1;
+      }).map(function (c) { return +c.getAttribute('data-price'); });
+      if (!prices.length) return [0, 0];
+      return [Math.floor(Math.min.apply(null, prices) / 10) * 10, Math.ceil(Math.max.apply(null, prices) / 10) * 10];
+    }
+
     function apply() {
-      var lo = +minI.value, hi = +maxI.value;
-      if (lo > hi) { var t = lo; lo = hi; hi = t; }
-      minLbl.textContent = fmt(lo);
-      maxLbl.textContent = fmt(hi);
-      var span = hi0 - lo0 || 1;
-      fill.style.left = ((lo - lo0) / span * 100) + '%';
-      fill.style.right = ((hi0 - hi) / span * 100) + '%';
+      var lo = 0, hi = Infinity;
+      if (minI && maxI) {
+        var smin = +minI.min, smax = +maxI.max;
+        lo = +minI.value; hi = +maxI.value;
+        if (lo > hi) { var t = lo; lo = hi; hi = t; }
+        if (minLbl) minLbl.textContent = fmt(lo);
+        if (maxLbl) maxLbl.textContent = fmt(hi);
+        var span = smax - smin || 1;
+        if (fill) { fill.style.left = ((lo - smin) / span * 100) + '%'; fill.style.right = ((smax - hi) / span * 100) + '%'; }
+      }
       var shown = 0;
       cards.forEach(function (c) {
-        var ok = +c.getAttribute('data-price') >= lo && +c.getAttribute('data-price') <= hi;
+        var price = +c.getAttribute('data-price');
+        var cats = (c.getAttribute('data-cats') || '').split(' ');
+        var ok = (activeCat === 'all' || cats.indexOf(activeCat) !== -1) && price >= lo && price <= hi;
         c.style.display = ok ? '' : 'none';
         if (ok) shown++;
       });
       if (countEl && tpl) countEl.textContent = tpl.replace('%d', shown);
+      if (empty) empty.hidden = shown !== 0;
     }
-    minI.addEventListener('input', apply);
-    maxI.addEventListener('input', apply);
-    if (clearBtn) clearBtn.addEventListener('click', function () {
-      minI.value = lo0; maxI.value = hi0; apply();
+
+    // Ajusta el slider de precio al rango de la categoría seleccionada
+    function syncPriceRange(cat) {
+      if (!minI || !maxI) return;
+      var b = boundsFor(cat);
+      minI.min = b[0]; minI.max = b[1]; minI.value = b[0];
+      maxI.min = b[0]; maxI.max = b[1]; maxI.value = b[1];
+    }
+
+    function setCat(cat) {
+      activeCat = cat;
+      triggers.forEach(function (tr) { tr.classList.toggle('is-active', tr.getAttribute('data-cat') === cat); });
+      syncPriceRange(cat);
+      apply();
+    }
+
+    triggers.forEach(function (tr) {
+      tr.addEventListener('click', function (e) { e.preventDefault(); setCat(tr.getAttribute('data-cat')); });
     });
-    apply();
+    if (minI) minI.addEventListener('input', apply);
+    if (maxI) maxI.addEventListener('input', apply);
+    if (clearBtn) clearBtn.addEventListener('click', function () {
+      if (minI) minI.value = +minI.min;
+      if (maxI) maxI.value = +maxI.max;
+      apply();
+    });
+
+    setCat('all');
+  }
+
+  /* ══════════════════════════════════════════════════════
+     TIENDA — modal de producto (vista rápida)
+  ══════════════════════════════════════════════════════ */
+  function initProductModal() {
+    var modal = document.getElementById('product-modal');
+    if (!modal) return;
+    var img = document.getElementById('pm-img');
+    var cats = document.getElementById('pm-cats');
+    var cats2 = document.getElementById('pm-cats2');
+    var name = document.getElementById('pm-name');
+    var price = document.getElementById('pm-price');
+    var desc = document.getElementById('pm-desc');
+    var specs = document.getElementById('pm-specs');
+    var buy = document.getElementById('pm-buy');
+    var closeBtn = document.getElementById('pm-close');
+
+    function open(card) {
+      img.src = card.getAttribute('data-img');
+      img.alt = card.getAttribute('data-name') || '';
+      name.textContent = card.getAttribute('data-name') || '';
+      var cl = card.getAttribute('data-catlabels') || '';
+      cats.textContent = cl;
+      if (cats2) cats2.textContent = cl;
+      var p = +card.getAttribute('data-price') || 0;
+      price.textContent = 'S/' + p.toLocaleString('es-PE', { minimumFractionDigits: 2 });
+      desc.textContent = card.getAttribute('data-desc') || '';
+      specs.innerHTML = '';
+      var arr = [];
+      try { arr = JSON.parse(card.getAttribute('data-specs') || '[]'); } catch (e) {}
+      arr.forEach(function (s) { var li = document.createElement('li'); li.textContent = s; specs.appendChild(li); });
+      buy.href = card.getAttribute('data-wa') || '#';
+      modal.hidden = false;
+      document.body.classList.add('pm-open');
+    }
+    function close() { modal.hidden = true; document.body.classList.remove('pm-open'); }
+
+    document.querySelectorAll('[data-open-modal]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.shop-card');
+        if (card) open(card);
+      });
+    });
+    closeBtn.addEventListener('click', close);
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+  }
+
+  /* ══════════════════════════════════════════════════════
+     OPORTUNIDADES — modal de detalle (promos/cursos/empleos)
+  ══════════════════════════════════════════════════════ */
+  function initOportModal() {
+    var modal = document.getElementById('op-modal');
+    if (!modal) return;
+    var grid = document.getElementById('op-grid');
+    var img = document.getElementById('op-img');
+    var tag = document.getElementById('op-tag');
+    var title = document.getElementById('op-title');
+    var meta = document.getElementById('op-meta');
+    var desc = document.getElementById('op-desc');
+    var cta = document.getElementById('op-cta');
+    var ctaLabel = document.getElementById('op-cta-label');
+    var closeBtn = document.getElementById('op-close');
+
+    function open(el) {
+      var im = el.getAttribute('data-img') || '';
+      if (im) { img.src = im; img.alt = el.getAttribute('data-title') || ''; grid.classList.remove('pm-noimg'); }
+      else { grid.classList.add('pm-noimg'); }
+      tag.textContent = el.getAttribute('data-tag') || '';
+      title.textContent = el.getAttribute('data-title') || '';
+      desc.textContent = el.getAttribute('data-desc') || '';
+      meta.innerHTML = '';
+      var arr = [];
+      try { arr = JSON.parse(el.getAttribute('data-meta') || '[]'); } catch (e) {}
+      arr.forEach(function (m) { if (!m) return; var s = document.createElement('span'); s.className = 'curso-tag'; s.textContent = m; meta.appendChild(s); });
+      meta.style.display = arr.length ? '' : 'none';
+      var href = el.getAttribute('data-href') || '#';
+      cta.href = href;
+      if (/^https?:/i.test(href)) { cta.target = '_blank'; cta.rel = 'noopener'; }
+      else { cta.removeAttribute('target'); cta.removeAttribute('rel'); }
+      ctaLabel.textContent = el.getAttribute('data-label') || '';
+      modal.hidden = false;
+      document.body.classList.add('pm-open');
+    }
+    function close() { modal.hidden = true; document.body.classList.remove('pm-open'); }
+
+    document.querySelectorAll('[data-open-op]').forEach(function (el) {
+      el.addEventListener('click', function () { open(el); });
+    });
+    closeBtn.addEventListener('click', close);
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
   }
 
   /* ══════════════════════════════════════════════════════
@@ -274,6 +408,8 @@
     initLazyImages();
     initOportTabs();
     initShopFilter();
+    initProductModal();
+    initOportModal();
   });
 
 })();
